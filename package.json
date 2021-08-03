@@ -1,0 +1,33 @@
+{
+  "name": "object-store-sign",
+  "version": "1.0.0",
+  "description": "对象存储签名",
+  "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^10.3.4",
+    "ts-node": "^6.1.2",
+    "typescript": "^2.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjeejj/object-store-sign.git"
+  },
+  "keywords": [
+    "object-store-sign",
+    "aliyun-oss",
+    "tencent-cos"
+  ],
+  "author": "jjeejj <jwj@wenjunjiang.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jjeejj/object-store-sign/issues"
+  },
+  "homepage": "hhttps://github.com/jjeejj/object-store-sign/#readme"
+}

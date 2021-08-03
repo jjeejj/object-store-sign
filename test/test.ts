@@ -1,0 +1,7 @@
+import fs from "fs";
+var postData =
+  '------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name="key"\r\n\r\ntest.png\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name="policy"\r\n\r\neyJleHBpcmF0aW9uIjoiMjAyMS0wOC0wM1QwODoxMTo0OC45NDVaIiwiY29uZGl0aW9ucyI6W1siY29udGVudC1sZW5ndGgtcmFuZ2UiLDAsMTAwMDAwMDAwMF0sWyJlcSIsIiRrZXkiLCJ0ZXN0LnBuZyJdLHsicS1zaWduLWFsZ29yaXRobSI6InNoYTEifSx7InEtYWsiOiJBS0lEeG9TeEpVWE80WW9wZENYZ2pzNEZQUUd5Wnk4M21IWWEifSx7InEtc2lnbi10aW1lIjoiMTYyNzk3ODI0ODsxNjI3OTc4MzA4In1dfQ==\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name="success_action_status"\r\n\r\n200\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name="q-signature"\r\n\r\nd9b7b330e75bdf40c0e73cf2cc5513e14bd0762d\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name="q-sign-algorithm"\r\n\r\nsha1\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name="q-ak"\r\n\r\nAKIDxoSxJUXO4YopdCXgjs4FPQGyZy83mHYa\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name="q-key-time"\r\n\r\n1627978248;1627978308\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name="file"; filename="test.png"\r\nContent-Type: "{Insert_File_Content_Type}"\r\n\r\n' +
+  fs.readFileSync("/Users/jiang/Repo/oss-sign/test/test.png") +
+  "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
+
+console.log(postData);
